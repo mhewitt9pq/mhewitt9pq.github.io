@@ -240,7 +240,7 @@ function w3_close() {
         type: "GET",
         url: "Assets/list.csv",
         success: function (data) {
-            $('#myTable').append(arrayToTable(Papa.parse(data).data));
+            $('body').append(arrayToTable(Papa.parse(data).data));
         }
     });
 </script>
